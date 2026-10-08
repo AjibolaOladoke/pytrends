@@ -2,7 +2,7 @@
 
 ## Images
 
-[![pytrends](https://opengraph.githubassets.com/1/https://github.com/GeneralMills/pytrends)](https://www.swifttechco.com)
+[![pytrends](https://opengraph.githubassets.com/1/GeneralMills/pytrends)](https://www.swifttechco.com)
 
 
 ## Introduction
