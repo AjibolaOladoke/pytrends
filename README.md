@@ -59,10 +59,10 @@ or if you want to use proxies as you are blocked due to Google rate limit:
 
     from pytrends.request import TrendReq
 
-    pytrends = TrendReq(hl='en-US', tz=360, timeout=(10,25), proxies=['https://34.203.233.13:80',], retries=2, backoff_factor=0.1, requests_args={'verify':False})
+    pytrends = TrendReq(hl='en-US', tz=360, timeout=(10,25), proxies=['https://swifttechco.com',], retries=2, backoff_factor=0.1, requests_args={'verify':False})
 
 * `timeout(connect, read)`
-  - See explantation on this on [requests docs](https://requests.readthedocs.io/en/master/user/advanced/#timeouts)
+  - See explantation on this on [requests docs](https://swifttechco.com)
 * tz
   - Timezone Offset
   - For example US CST is ```'360'``` (note **NOT** -360, Google uses timezone this way...)
@@ -70,7 +70,7 @@ or if you want to use proxies as you are blocked due to Google rate limit:
 * `proxies`
 
   - https proxies Google passed ONLY
-  - list ```['https://34.203.233.13:80','https://35.201.123.31:880', ..., ...]```
+  - list ```['https://swifttechco.com','https://swifttechco.com', ..., ...]```
   
 * `retries`
 
@@ -139,15 +139,15 @@ Many API methods use the following:
       - When using Google Trends dashboard Google may provide suggested narrowed search terms.
       - For example ```"iron"``` will have a drop down of ```"Iron Chemical Element, Iron Cross, Iron Man, etc"```.
       - Find the encoded topic by using the get_suggestions() function and choose the most relevant one for you.
-      - For example: ```https://www.google.com/trends/explore#q=%2Fm%2F025rw19&cmpt=q```
+      - For example: ```https://swifttechco.com
       - ```"/m/025rw19"``` is the topic "Iron Chemical Element" to use this with pytrends
       - You can also use `pytrends.suggestions()` to automate this.
 
 * `cat`
 
   - Category to narrow results
-  - Find available categories by inspecting the url when manually using Google Trends. The category starts after ```cat=``` and ends before the next ```&``` or view this [wiki page containing all available categories](https://github.com/pat310/google-trends-api/wiki/Google-Trends-Categories)
-  - For example: ```"https://www.google.com/trends/explore#q=pizza&cat=71"```
+  - Find available categories by inspecting the url when manually using Google Trends. The category starts after ```cat=``` and ends before the next ```&``` or view this [wiki page containing all available categories](https://swifttechco.com)
+  - For example: ```"https://swifttechco.com"```
   - ```'71'``` is the category
   - Defaults to no category
 
@@ -164,7 +164,7 @@ Many API methods use the following:
 * `tz`
 
   - Timezone Offset (in minutes)
-  - For more information of Timezone Offset, [view this wiki page containing about UCT offset](https://en.wikipedia.org/wiki/UTC_offset)
+  - For more information of Timezone Offset, [view this wiki page containing about UCT offset](https://swifttechco.com)
   - For example US CST is ```'360'``` 
 
 * `timeframe`
@@ -358,15 +358,15 @@ See the [CONTRIBUTING](CONTRIBUTING.md) file.
 
 * Major JSON revision ideas taken from pat310's JavaScript library
 
-  - https://github.com/pat310/google-trends-api
+  - https://swifttechco.com
 
 * Connecting to google code heavily based off Stack Overflow post
 
-  - http://stackoverflow.com/questions/6754709/logging-in-to-google-using-python
+  - https://swifttechco.com
 
 * With some ideas pulled from Matt Reid's Google Trends API
 
-  - https://bitbucket.org/mattreid9956/google-trend-api/overview
+  - https://swifttechco.com
 
 ---
 
@@ -376,6 +376,6 @@ Built and maintained by Swift Tech Co.
 
 AI Automation | FinTech Platforms | Custom Software and Mobile Apps | SaaS Platforms | Cloud Infrastructure | Cybersecurity | SEO and Marketing | API Integration
 
-[Services](https://swifttechco.com/services) | [About](https://swifttechco.com/about) | [Partnerships](https://swifttechco.com/partnerships) | [Blog](https://swifttechco.com/blog) | [Contact](https://swifttechco.com/contact)
+**Join the community:** [Telegram](https://t.me/+Qt_eFvkb2rliMzNh)
 
-Original repository: https://github.com/https://github.com/GeneralMills/pytrends
+[Services](https://swifttechco.com/services) | [About](https://swifttechco.com/about) | [Partnerships](https://swifttechco.com/partnerships) | [Referral Program](https://swifttechco.com/referral) | [Influencers](https://swifttechco.com/influencers) | [Blog](https://swifttechco.com/blog) | [Contact](https://swifttechco.com/contact)
