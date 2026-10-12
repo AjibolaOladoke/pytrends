@@ -6,7 +6,7 @@ Every project needs a shelf of ready answers. product and engineering is one of 
 
 ## Images
 
-[![pytrends](images/preview.png)](https://github.com/Swift-Tech-Co)
+[![pytrends](images/preview.png)](https://github.com/Swift-Tech-Co/pytrends)
 
 ## Introduction
 
@@ -16,7 +16,6 @@ Allows simple interface for automating downloading of reports from Google Trends
 Only good until Google changes their backend again :-P. When that happens feel free to contribute!
 
 **Looking for maintainers!** Please open an issue with a method of contacting you if you're interested.
-
 
 ## Table of Contents
 
@@ -64,10 +63,9 @@ Only good until Google changes their backend again :-P. When that happens feel f
 
 or if you want to use proxies as you are blocked due to Google rate limit:
 
-
     from pytrends.request import TrendReq
 
-    pytrends = TrendReq(hl='en-US', tz=360, timeout=(10,25), proxies=['https://swifttechco.com',], retries=2, backoff_factor=0.1, requests_args={'verify':False})
+    pytrends = TrendReq(hl='en-US', tz=360, timeout=(10,25), proxies=['https://github.com/Swift-Tech-Co/pytrends',], retries=2, backoff_factor=0.1, requests_args={'verify':False})
 
 * `timeout(connect, read)`
   - See explantation on this on requests docs
@@ -78,7 +76,7 @@ or if you want to use proxies as you are blocked due to Google rate limit:
 * `proxies`
 
   - https proxies Google passed ONLY
-  - list ```['https://swifttechco.com','https://swifttechco.com', ..., ...]```
+  - list ```['https://github.com/Swift-Tech-Co/pytrends','https://github.com/Swift-Tech-Co/pytrends', ..., ...]```
   
 * `retries`
 
@@ -104,7 +102,6 @@ Parameters
 
   - *Required*
   - Keywords to get data for
-
 
 <sub><sup>[back to top](#API)</sub></sup>
 
@@ -147,7 +144,7 @@ Many API methods use the following:
       - When using Google Trends dashboard Google may provide suggested narrowed search terms.
       - For example ```"iron"``` will have a drop down of ```"Iron Chemical Element, Iron Cross, Iron Man, etc"```.
       - Find the encoded topic by using the get_suggestions() function and choose the most relevant one for you.
-      - For example: ```https://swifttechco.com
+      - For example: ```https://github.com/Swift-Tech-Co/pytrends
       - ```"/m/025rw19"``` is the topic "Iron Chemical Element" to use this with pytrends
       - You can also use `pytrends.suggestions()` to automate this.
 
@@ -155,7 +152,7 @@ Many API methods use the following:
 
   - Category to narrow results
   - Find available categories by inspecting the url when manually using Google Trends. The category starts after ```cat=``` and ends before the next ```&``` or view this wiki page containing all available categories
-  - For example: ```"https://swifttechco.com"```
+  - For example: ```"https://github.com/Swift-Tech-Co/pytrends"```
   - ```'71'``` is the category
   - Defaults to no category
 
@@ -205,7 +202,6 @@ Many API methods use the following:
   - Example ```'images'```
   - Defaults to web searches
   - Can be ```images```, ```news```, ```youtube``` or ```froogle``` (for Google Shopping results)
-
 
 <sub><sup>[back to top](#api-payload-keys)</sub></sup>
 
@@ -376,13 +372,21 @@ Home | Services | Careers | Referral Program | Influencers | About | Contact
 
 **Connect**
 
-- Website: swifttechco.com
+- Website: https://github.com/Swift-Tech-Co/pytrends
 - LinkedIn: [linkedin.com/in/stephenoladoke](https://www.linkedin.com/in/stephenoladoke/)
 - LinkedIn (Company): [linkedin.com/company/swift-tech-co](https://www.linkedin.com/company/swift-tech-co)
 - X: [@MrOladoke](https://x.com/MrOladoke)
 - Instagram: [@mr.oladoke](https://www.instagram.com/mr.oladoke/)
 - Instagram (Company): [@swifttechco](https://www.instagram.com/swifttechco/)
 - Organization: [github.com/Swift-Tech-Co](https://github.com/Swift-Tech-Co)
+
+## Sources
+
+Compiled and maintained from upstream [GeneralMills/pytrends](https://github.com/GeneralMills/pytrends) under permissive open-source license.
+
+---
+
+Maintained by [Swift Tech Co.](https://github.com/Swift-Tech-Co) - [Telegram](https://t.me/+Qt_eFvkb2rliMzNh)
 
 ## Sources
 
