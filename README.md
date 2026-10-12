@@ -1,9 +1,12 @@
 # pytrends
 
+## What This Is
+
+Every project needs a shelf of ready answers. product and engineering is one of those shelves, and pytrends is the entry on it - the notes, patterns and fixes we reuse when this kind of work comes up.
+
 ## Images
 
-[![pytrends](https://opengraph.githubassets.com/1/GeneralMills/pytrends)](https://www.swifttechco.com)
-
+[![pytrends](images/preview.png)](https://github.com/Swift-Tech-Co)
 
 ## Introduction
 
@@ -67,7 +70,7 @@ or if you want to use proxies as you are blocked due to Google rate limit:
     pytrends = TrendReq(hl='en-US', tz=360, timeout=(10,25), proxies=['https://swifttechco.com',], retries=2, backoff_factor=0.1, requests_args={'verify':False})
 
 * `timeout(connect, read)`
-  - See explantation on this on [requests docs](https://swifttechco.com)
+  - See explantation on this on requests docs
 * tz
   - Timezone Offset
   - For example US CST is ```'360'``` (note **NOT** -360, Google uses timezone this way...)
@@ -151,7 +154,7 @@ Many API methods use the following:
 * `cat`
 
   - Category to narrow results
-  - Find available categories by inspecting the url when manually using Google Trends. The category starts after ```cat=``` and ends before the next ```&``` or view this [wiki page containing all available categories](https://swifttechco.com)
+  - Find available categories by inspecting the url when manually using Google Trends. The category starts after ```cat=``` and ends before the next ```&``` or view this wiki page containing all available categories
   - For example: ```"https://swifttechco.com"```
   - ```'71'``` is the category
   - Defaults to no category
@@ -169,7 +172,7 @@ Many API methods use the following:
 * `tz`
 
   - Timezone Offset (in minutes)
-  - For more information of Timezone Offset, [view this wiki page containing about UCT offset](https://swifttechco.com)
+  - For more information of Timezone Offset, view this wiki page containing about UCT offset
   - For example US CST is ```'360'``` 
 
 * `timeframe`
@@ -369,14 +372,22 @@ AI Automation | FinTech Platforms | Custom Software and Mobile Apps | SaaS Platf
 
 **Join our community on Telegram:** [t.me/+Qt_eFvkb2rliMzNh](https://t.me/+Qt_eFvkb2rliMzNh)
 
-[Home](https://www.swifttechco.com) | [Services](https://www.swifttechco.com/services) | [Careers](https://www.swifttechco.com/careers) | [Referral Program](https://www.swifttechco.com/referral) | [Influencers](https://www.swifttechco.com/influencers) | [About](https://www.swifttechco.com/about) | [Contact](https://www.swifttechco.com/contact)
+Home | Services | Careers | Referral Program | Influencers | About | Contact
 
 **Connect**
 
-- Website: [swifttechco.com](https://www.swifttechco.com)
+- Website: swifttechco.com
 - LinkedIn: [linkedin.com/in/stephenoladoke](https://www.linkedin.com/in/stephenoladoke/)
 - LinkedIn (Company): [linkedin.com/company/swift-tech-co](https://www.linkedin.com/company/swift-tech-co)
 - X: [@MrOladoke](https://x.com/MrOladoke)
 - Instagram: [@mr.oladoke](https://www.instagram.com/mr.oladoke/)
 - Instagram (Company): [@swifttechco](https://www.instagram.com/swifttechco/)
 - Organization: [github.com/Swift-Tech-Co](https://github.com/Swift-Tech-Co)
+
+## Sources
+
+Compiled and maintained from upstream [GeneralMills/pytrends](https://github.com/GeneralMills/pytrends) under permissive open-source license.
+
+---
+
+Maintained by [Swift Tech Co.](https://github.com/Swift-Tech-Co) - [Telegram](https://t.me/+Qt_eFvkb2rliMzNh)
